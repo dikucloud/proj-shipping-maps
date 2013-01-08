@@ -10,12 +10,19 @@ That map data is often simplified can be seen on the following two images from G
 
 As can be seen, it would be unwise to navigate a ship according to the map images of Greenland from Google Maps.
 
+For an introduction to simplification algorithms, see the Wikipedia article on the [Ramer-Douglas-Peucker algorithm](http://en.wikipedia.org/wiki/Ramer%E2%80%93Douglas%E2%80%93Peucker_algorithm)
+
+**Example of line simplification**:
+
+![Example of line simplification](http://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Douglas-Peucker_animated.gif/220px-Douglas-Peucker_animated.gif)
+
 ## Project description
 
 In this project you will produce a geometric simplification algorithm that reduces the size of a geographical dataset for a coastline, while maintaining the safety for shipping.
 
 * Automatically remove points from a coastline object (including islands) to reduce size of data
 * Resulting coastline must still be safe for shipping, without adding large amounts of land area (e.g. the bounding rectangle for greenland would be a "safe" coastline, but would make it impossible to navigate the fjords).
+
 
 Data will be provided by [GST](http://www.gst.dk/English/) for the project (data is *confidential* and must not be used outside the project).
 
