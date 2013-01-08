@@ -1,4 +1,4 @@
-# Big data navigation maps that are safe for shipping (collaboration with Danish Geodata Agency)
+# Big data navigation maps that are safe for shipping
 
 The [Danish Geodata Agency](http://www.gst.dk/English/) produce data and maps that are used in naval navigation in danish territorial waters including Greenland. Having highly accurate digital map data for a coastline as vast as the one surrounding Greenland, is a challenge. To make it possible to work with the data, so-called simplification algorithms are used, which transforms a high resolution geometric object (such as a coastline) into a low-resolution geometric object.
 
@@ -9,5 +9,20 @@ That map data is often simplified can be seen on the following two images from G
 ![Satellite image of Greenland](http://i.imm.io/S8fP.png)  ![Map image of Greenland](http://i.imm.io/S8fe.png) 
 
 As can be seen, it would be unwise to navigate a ship according to the map images of Greenland from Google Maps.
+
+## Project description
+
+In this project you will produce a geometric simplification algorithm that reduces the size of a geographical dataset for a coastline, while maintaining the safety for shipping.
+
+* Automatically remove points from a coastline object (including islands) to reduce size of data
+* Resulting coastline must still be safe for shipping, without adding large amounts of land area (e.g. the bounding rectangle for greenland would be a "safe" coastline, but would make it impossible to navigate the fjords).
+
+Data will be provided by [GST](http://www.gst.dk/English/) for the project (data is *confidential* and must not be used outside the project).
+
+If you are interested in doing this project, send an email to kostas@diku.dk.
+
+## External partner
+
+The project is done in collaboration with the [Danish Geodata Agency](http://www.gst.dk/English/)
 
 
