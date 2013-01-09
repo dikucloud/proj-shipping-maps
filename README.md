@@ -4,6 +4,8 @@ The [Danish Geodata Agency](http://www.gst.dk/English/) produce data and maps th
 
 When producing maps for navigation, it is important that geographic features such as a small island are not "simplified away". Although small in area, such a small rocky island may still cause a ship wreck! Another example could be a small peninsula that although small protrudes out into the ocean near an important shipping line.
 
+![Ship wreck](http://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/8_-_AmStar_7.JPG/360px-8_-_AmStar_7.JPG)
+
 That map data is often simplified can be seen on the following two images from Google Maps. They are of the same area on the [coast of Greenland](https://maps.google.com/?ll=64.078279,-51.448288&spn=0.020974,0.076904&t=m&z=14).
 
 ![Satellite image of Greenland](http://i.imm.io/S8fP.png)  ![Map image of Greenland](http://i.imm.io/S8fe.png) 
