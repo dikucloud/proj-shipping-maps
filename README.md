@@ -10,7 +10,7 @@ That map data is often simplified can be seen on the following two images from G
 
 As can be seen, it would be unwise to navigate a ship according to the map images of Greenland from Google Maps.
 
-For an introduction to simplification algorithms, see the Wikipedia article on the [Ramer-Douglas-Peucker algorithm](http://en.wikipedia.org/wiki/Ramer%E2%80%93Douglas%E2%80%93Peucker_algorithm). It should be noted that Ramer-Douglas-Peucker would be a very bad choice for a simplification algorithm for navigational maps, as it would most likely remove small islands and peninsulas!
+For an introduction to simplification algorithms, see the Wikipedia article on the [Ramer-Douglas-Peucker algorithm](http://en.wikipedia.org/wiki/Ramer%E2%80%93Douglas%E2%80%93Peucker_algorithm). It should be noted that Ramer-Douglas-Peucker would be a very bad choice for a simplification algorithm for coastlines, as it would most likely remove small islands and peninsulas!
 
 **Example of line simplification**:
 
@@ -18,7 +18,7 @@ For an introduction to simplification algorithms, see the Wikipedia article on t
 
 ## Project description
 
-In this project you will design an algorithm that reduces the number of points needed to represent a geographical coastline, while maintaining safety for shipping.
+In this project you will design a simplification algorithm that reduces the number of points needed to represent a coastline, while maintaining safety for shipping if the coastline data is used to produce a nautical chart.
 
 You will think about the guarantees your algorithm offers:
 
