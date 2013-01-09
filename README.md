@@ -18,15 +18,26 @@ For an introduction to simplification algorithms, see the Wikipedia article on t
 
 ## Project description
 
-In this project you will produce a geometric simplification algorithm that reduces the size of a geographical dataset for a coastline, while maintaining the safety for shipping.
+In this project you will design an algorithm that reduces the number of points needed to represent a geographical coastline, while maintaining safety for shipping.
 
-* Automatically remove points from a coastline object (including islands) to reduce size of data
-* Resulting coastline must still be safe for shipping, without adding large amounts of land area (e.g. the bounding rectangle for greenland would be a "safe" coastline, but would make it impossible to navigate the fjords).
+You will think about the guarantees your algorithm offers:
 
+* Does it only add land mass?
+* Does it only move the coastline by a certain amount?
 
-Data will be provided by [GST](http://www.gst.dk/English/) for the project (data is *confidential* and must not be used outside the project).
+An simple algorithm that would produce a "safe" shipping map, would be to simply compute the minimum bounding rectangle around all (closed circuit) coastlines, but in the case of Greenland, that would make it impossible to navigate the fjords. A good algorithm produces output with the following properties:
+
+* Generally the output has high fidelity compared to the input
+* Generally the output is significantly smaller in size than the input
+* A shipping route that would result in a ship wreck for the input, would also result in a ship wreck for the output
+* A coordinate that is reachable by ship for the input, is also be reachable by ship in the output (by a margin of *x* meters)
+
+Data will be provided by [Danish Geodata Agency](http://www.gst.dk/English/) for the project (data is *confidential* and must not be used outside the project). 
 
 If you are interested in doing this project, send an email to kostas@diku.dk.
+
+* [Read more about the nautical charts produced by the agency](http://www.gst.dk/English/NauticalChartsandNavigation/)
+
 
 ## External partner
 
