@@ -10,7 +10,7 @@ That map data is often simplified can be seen on the following two images from G
 
 ![Satellite image of Greenland](http://i.imm.io/S8fP.png)  ![Map image of Greenland](http://i.imm.io/S8fe.png) 
 
-As can be seen, it would be unwise to use Google Maps as a nautical chart, which is not what Google Maps is made for.
+As can be seen, it would be unwise to use Google Maps as a nautical chart, which is not what Google Maps is designed for.
 
 For an introduction to simplification algorithms, see the Wikipedia article on the [Ramer-Douglas-Peucker algorithm](http://en.wikipedia.org/wiki/Ramer%E2%80%93Douglas%E2%80%93Peucker_algorithm). It should be noted that Ramer-Douglas-Peucker would be a very bad choice for a simplification algorithm for coastlines, as it would most likely remove small islands and peninsulas!
 
