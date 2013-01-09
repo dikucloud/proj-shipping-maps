@@ -6,7 +6,7 @@ When producing maps for navigation, it is important that geographic features suc
 
 ![Ship wreck](http://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/8_-_AmStar_7.JPG/360px-8_-_AmStar_7.JPG)
 
-That map data is often simplified can be seen on the following [two images from Google Maps](https://maps.google.com/?ll=64.078279,-51.448288&spn=0.020974,0.076904&t=m&z=14) (try opening the link and flipping between "map" and "satellite" view). They are of the same area on the coast of Greenland.
+That map data is often simplified can be seen on the following [two images from Google Maps](https://maps.google.com/?ll=64.016452,-51.627846&spn=0.098822,0.363579&t=h&z=12) (try opening the link and flipping between "map" and "satellite" view). They are of the same area on the coast of Greenland.
 
 ![Satellite image of Greenland](http://i.imm.io/SdqG.png)  ![Map image of Greenland](http://i.imm.io/SdqU.png) 
 
