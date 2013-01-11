@@ -96,7 +96,7 @@ The problem with using Ramer-Douglas-Peucker is that e.g. with 25m tolerance man
 	<tr>
 		<th>Points before</th>
 		<th>Points after</th>
-		<th>Island area before</th>
+		<th>Area of island before simplification</th>
 	</tr>
 	<tr>
 		<td>4</td>
