@@ -38,9 +38,96 @@ Data will be provided by [Danish Geodata Agency](http://www.gst.dk/English/) or 
 
 The [OpenStreetMap data for Greenland](http://download.cloudmade.com/americas/northern_america/greenland#downloads_breadcrumbs) is free to download. It has the following properties:
 
-* 21542 linestrings total
-* 18077 rings (propably islands). Average 15 points. Max 1248 points 
-* 3465 non-rings (propably mainland coastline segments). Average 82 points. Max 530 points
+* 21K linestrings total
+* 572K points total
+* 3K non-rings (propably mainland coastline segments). Average 82 points. Max 530 points
+* 18K rings (propably islands). Average 15 points. Max 1248 points
+
+Running Ramer-Douglas-Peucker on the entire dataset (run independently on each linestring) reduces the number of points (depending on the algorithm *tolerance* argument). All linestring have been projected from lat-lon to the [GR96 / UTM zone 29N](http://georepository.com/crs_3189/GR96-UTM-zone-29N.html) projection:
+
+<table>
+	<tr>
+		<th>Tolerance in meters</th>
+		<th>Reduction in points</th>
+		<th># Points</th>
+		<th>Average points per linestring</th>
+	</tr>
+	<tr>
+		<td>0m</td>
+		<td>0%</td>
+		<td>572K</td>
+		<td>26</td>
+	</tr>
+	<tr>
+		<td>1m</td>
+		<td>0.8%</td>
+		<td>567K</td>
+		<td>26</td>
+		<td>2</td>
+	</tr>
+	<tr>
+		<td>25m</td>
+		<td>11%</td>
+		<td>508K</td>
+		<td>23</td>
+		<td>1</td>
+	</tr>
+	<tr>
+		<td>100m</td>
+		<td>68%</td>
+		<td>128K</td>
+		<td>8</td>
+		<td>1</td>
+	</tr>
+	<tr>
+		<td>500m</td>
+		<td>90%</td>
+		<td>56K</td>
+		<td>3</td>
+		<td>1</td>
+	</tr>
+</table>
+
+The problem with using Ramer-Douglas-Peucker is that e.g. with 25m many small islands collapse to points:
+
+<table>
+	<tr>
+		<th>Points before</th>
+		<th>Points after</th>
+		<th>Island area before</th>
+	</tr>
+	<tr>
+		<td>4</td>
+		<td>1</td>
+		<td>112 m2</td>		
+	</tr>
+	<tr>
+		<td>14</td>
+		<td>1</td>
+		<td>145 m2</td>		
+	</tr>
+	<tr>
+		<td>9</td>
+		<td>1</td>
+		<td>78 m2</td>		
+	</tr>
+	<tr>
+		<td>9</td>
+		<td>1</td>
+		<td>56 m2</td>		
+	</tr>
+	<tr>
+		<td>8</td>
+		<td>1</td>
+		<td>67 m2</td>		
+	</tr>
+	<tr>
+		<td>10</td>
+		<td>1</td>
+		<td>102 m2</td>		
+	</tr>	
+
+You do not want small reefs disappearing on a nautical chart!
 
 If you are interested in doing this project, send an email to kostas@diku.dk.
 
