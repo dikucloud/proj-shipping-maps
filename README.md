@@ -40,7 +40,7 @@ Data will be provided by [Danish Geodata Agency](http://www.gst.dk/English/) or 
 
 ![Greenland in OpenStreetMap](http://a.tile.openstreetmap.org/1/0/0.png)
 
-The [OpenStreetMap data for Greenland](http://download.cloudmade.com/americas/northern_america/greenland#downloads_breadcrumbs) is free to download. It has the following properties:
+The [OpenStreetMap data for the coastline of Greenland](http://download.cloudmade.com/americas/northern_america/greenland#downloads_breadcrumbs) is free to download. It has the following properties:
 
 * 21K linestrings total
 * 572K points total
