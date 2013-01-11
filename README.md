@@ -34,7 +34,13 @@ An simple algorithm that would produce a "safe" shipping map, would be to simply
 * A shipping route that would result in a ship wreck for the input, would also result in a ship wreck for the output
 * A coordinate that is reachable by ship for the input, is also be reachable by ship in the output (by a margin of *x* meters)
 
-Data will be provided by [Danish Geodata Agency](http://www.gst.dk/English/) for the project (data is *confidential* and must not be used outside the project). 
+Data will be provided by [Danish Geodata Agency](http://www.gst.dk/English/) or by OpenStreetMap if that is easier.
+
+The [OpenStreetMap data for Greenland](http://download.cloudmade.com/americas/northern_america/greenland#downloads_breadcrumbs) is free to download. It has the following properties:
+
+* 21542 linestrings total
+* 18077 rings (propably islands). Average 15 points. Max 1248 points 
+* 3465 non-rings (propably mainland coastline segments). Average 82 points. Max 530 points
 
 If you are interested in doing this project, send an email to kostas@diku.dk.
 
