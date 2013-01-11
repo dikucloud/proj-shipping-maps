@@ -47,7 +47,7 @@ The [coastline of Greenland](http://download.cloudmade.com/americas/northern_ame
 * 3K non-rings (propably mainland coastline segments). Average 82 points. Max 530 points
 * 18K rings (propably islands). Average 15 points. Max 1248 points
 
-Running Ramer-Douglas-Peucker on the entire dataset (run independently on each linestring) reduces the number of points (depending on the algorithm *tolerance* argument). All linestring have been projected from lat-lon to the [GR96 / UTM zone 29N](http://georepository.com/crs_3189/GR96-UTM-zone-29N.html) projection:
+Running Ramer-Douglas-Peucker on the entire dataset (run independently on each linestring) reduces the number of points (depending on the algorithm *tolerance* argument). All linestring have been projected from lat-lon to the [GR96 / UTM zone 29N](http://georepository.com/crs_3189/GR96-UTM-zone-29N.html) projection (a projection suitable for representing coordinates in Greenland):
 
 <table>
 	<tr>
