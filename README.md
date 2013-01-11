@@ -51,12 +51,14 @@ Running Ramer-Douglas-Peucker on the entire dataset (run independently on each l
 		<th>Reduction in points</th>
 		<th># Points</th>
 		<th>Average points per linestring</th>
+		<th>Minimum points for linestring</th>		
 	</tr>
 	<tr>
 		<td>0m</td>
 		<td>0%</td>
 		<td>572K</td>
 		<td>26</td>
+		<td>2</td>
 	</tr>
 	<tr>
 		<td>1m</td>
@@ -88,7 +90,7 @@ Running Ramer-Douglas-Peucker on the entire dataset (run independently on each l
 	</tr>
 </table>
 
-The problem with using Ramer-Douglas-Peucker is that e.g. with 25m many small islands collapse to points:
+The problem with using Ramer-Douglas-Peucker is that e.g. with 25m tolerance many small islands collapse to points:
 
 <table>
 	<tr>
