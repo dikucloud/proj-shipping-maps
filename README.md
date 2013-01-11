@@ -130,7 +130,7 @@ The problem with using Ramer-Douglas-Peucker is that e.g. with 25m tolerance man
 	</tr>
 </table>
 
-You do not want small reefs disappearing on a nautical chart!
+You do not want small reefs disappearing off the nautical chart!
 
 If you are interested in doing this project, send an email to kostas@diku.dk.
 
