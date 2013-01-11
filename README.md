@@ -36,6 +36,8 @@ An simple algorithm that would produce a "safe" shipping map, would be to simply
 
 Data will be provided by [Danish Geodata Agency](http://www.gst.dk/English/) or by OpenStreetMap if that is easier.
 
+## Example
+
 The [OpenStreetMap data for Greenland](http://download.cloudmade.com/americas/northern_america/greenland#downloads_breadcrumbs) is free to download. It has the following properties:
 
 * 21K linestrings total
