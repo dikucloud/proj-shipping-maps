@@ -127,7 +127,8 @@ The problem with using Ramer-Douglas-Peucker is that e.g. with 25m tolerance man
 		<td>10</td>
 		<td>1</td>
 		<td>102 m2</td>		
-	</tr>	
+	</tr>
+</table>
 
 You do not want small reefs disappearing on a nautical chart!
 
