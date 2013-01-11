@@ -53,7 +53,7 @@ Running Ramer-Douglas-Peucker on the entire dataset (run independently on each l
 	<tr>
 		<th>Tolerance in meters</th>
 		<th>Reduction in points</th>
-		<th># Points</th>
+		<th>Number of Points</th>
 		<th>Average points per linestring</th>
 		<th>Minimum points for linestring</th>		
 	</tr>
