@@ -94,7 +94,7 @@ Running Ramer-Douglas-Peucker on the entire dataset (run independently on each l
 	</tr>
 </table>
 
-As a side-note it takes PostGIS 350ms to run the Ramer-Douglas-Peucker algorithm on all 21 thousand linestrings (the reason the algorithm is popular is its *Θ*(*n* log *n*) running time, *O*(*n*^2) worst-case. The problem with using Ramer-Douglas-Peucker is that e.g. with 25m tolerance many small islands collapse to points:
+As a side-note it takes PostGIS 350ms to run the Ramer-Douglas-Peucker algorithm on all 21 thousand linestrings (the reason the algorithm is popular is its *Θ*( *n* log *n* ) running time, *O*( *n* ^2) worst-case. The problem with using Ramer-Douglas-Peucker is that e.g. with 25m tolerance many small islands collapse to points:
 
 <table>
 	<tr>
